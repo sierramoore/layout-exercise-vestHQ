@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url("AvenirLTStd-Book.eot");
+  src: url("AvenirLTStd-Book.woff2") format("woff2"), url("AvenirLTStd-Book.woff") format("woff"), url("AvenirLTStd-Book.ttf") format("truetype"), url("AvenirLTStd-Book.svg#AvenirLTStd-Book") format("svg"), url("AvenirLTStd-Book.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+*,
+*::after,
+*::before {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "AvenirLTStd-Book", Fallback, sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  padding: 3rem; }
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 1.2rem; }
+  .header, .footer {
+    font-size: 1.8rem; } }
+
+.main {
+  max-width: 200rem;
+  margin: 0 auto;
+  display: inline-block; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.row, .row__mid {
+  max-width: 200rem;
+  min-width: 70vw;
+  margin: 0 auto;
+  text-align: center; }
+  .row:not(:last-child), .row__mid:not(:last-child) {
+    margin-bottom: 4rem; }
+  .row::after, .row__mid::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"], .row__mid [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child), .row__mid [class^="col-"]:not(:last-child) {
+      margin-right: 10rem; }
+  .row .col-1-of-2, .row__mid .col-1-of-2 {
+    width: calc((100% - 10rem) / 2);
+    height: 60vh;
+    line-height: 60vh;
+    border-radius: 5rem;
+    background-color: #339bff; }
+  .row .col-1-of-3, .row__mid .col-1-of-3, .row .col-1-of-3__page3, .row__mid .col-1-of-3__page3 {
+    width: calc((100% - 2 * 10rem) / 3);
+    height: 40vh;
+    line-height: 40vh;
+    border-radius: 5rem;
+    background-color: #339bff; }
+    .row .col-1-of-3__page3, .row__mid .col-1-of-3__page3 {
+      width: calc((100% - 2 * 10rem) / 3);
+      height: 14vh;
+      line-height: 14vh; }
+  .row__mid {
+    width: 100%;
+    margin-left: calc((100% + 10rem) / 3); }
+
+.header {
+  width: 70vw;
+  height: 12rem;
+  background-color: #339bff;
+  line-height: 12rem; }
+
+.footer {
+  width: 70vw;
+  height: 12rem;
+  background-color: #339bff;
+  line-height: 12rem; }
